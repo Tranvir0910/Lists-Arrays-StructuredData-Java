@@ -35,7 +35,6 @@ public class WordFrequencies {
         return maxIdx;
     }
     public void tester(){
-
         findUnique();
         System.out.println("unique word = " + myWords.size());
         for(int i = 0; i < myWords.size(); i++){
@@ -45,6 +44,7 @@ public class WordFrequencies {
         myWords.clear();
         findUnique();
         int result = findIndexOfMax();
+        System.out.println("--------------------------------------------");
         System.out.println(myWords.get(result) + " " + myFreqs.get(result));
     }
 }
